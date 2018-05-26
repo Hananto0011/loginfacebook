@@ -153,7 +153,11 @@ span.psw {
      js.src = "https://connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
-</script>
+
+     FB.getLoginStatus(function(response) {
+    console.log(response);
+    });
+    </script>
  </script>
 <h2>Modal Login Form</h2>
 
