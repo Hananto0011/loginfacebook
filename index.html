@@ -133,6 +133,7 @@ span.psw {
 </head>
 <body>
  <script type="text/javascript">
+    $(document).ready(function () {
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '1060156854123176',
@@ -157,6 +158,7 @@ span.psw {
      FB.getLoginStatus(function(response) {
     console.log(response);
     });
+ });
     </script>
  </script>
 <h2>Modal Login Form</h2>
