@@ -19,6 +19,7 @@ $("#tombollogin").click(function(){
 
 function onSuccess(googleUser) {
       console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+
     }
     function onFailure(error) {
       console.log(error);
@@ -35,3 +36,7 @@ function onSuccess(googleUser) {
       });
     }
 
+
+    FB.getLoginStatus(function(response) {
+    console.log(response);
+});
