@@ -132,8 +132,6 @@ span.psw {
 </head>
 <body>
  <script type="text/javascript">
-     
-<script>
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '1060156854123176',
@@ -150,6 +148,7 @@ span.psw {
      var js, fjs = d.getElementsByTagName(s)[0];
      if (d.getElementById(id)) {return;}
      js = d.createElement(s); js.id = id;
+     console.log(js);
      js.src = "https://connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
